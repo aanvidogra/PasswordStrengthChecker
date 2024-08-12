@@ -24,10 +24,14 @@ if length > 8:
     score+=1
 if length > 12:
     score+=1
-if length > 17:
+if length > 30:
     score+=1
-if length > 25:
+if length > 50:
     score+=1
+if length > 60:
+    print("Password is too long")
+    exit()
+
 print(f"Password length is {str(length)}, adding {str(score)} points!")
 
 if sum(characters) > 1:
